@@ -72,7 +72,6 @@ export default Ember.Controller.extend({
   }),
 
   actions: {
-  
     toggleBurgerMenu() {
       this.toggleProperty('is-open');
       return false;
