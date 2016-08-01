@@ -34,7 +34,8 @@ module.exports = function(environment) {
     ajaxPolling: false,
 
     featureFlags: {
-      'debug-logging': false
+      'debug-logging': false,
+      'dashboard': true
     }
   };
 
