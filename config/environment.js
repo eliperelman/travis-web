@@ -35,7 +35,7 @@ module.exports = function(environment) {
 
     featureFlags: {
       'debug-logging': false,
-      'dashboard': true
+      'dashboard': false
     }
   };
 
@@ -113,6 +113,11 @@ module.exports = function(environment) {
     };
 
     ENV.skipConfirmations = true;
+
+    ENV.featureFlags = {
+      'debug-logging': false,
+      'dashboard': false
+    }
   }
 
   if (environment === 'production') {
